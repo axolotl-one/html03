@@ -16,7 +16,7 @@ nav{
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    width: 19%;
+    width: 18%;
 }
 
 nav a{
@@ -26,38 +26,41 @@ nav a{
     padding-bottom: 10px;
 }
 
+nav a:hover{
+    border-bottom: 5px solid #00754a;
+    color: #00754a;
+}
+
 button {
     font-size: 20px;
     width: 120px;
     height: 50px;
     border-radius: 25px;
-}
-
-.btnBlack {
-    background-color: black;
-    color: white;
-}
-
-.btnWhite {
-    background-color: white;
-    color: black;
-}
-
-.btnBlack:hover{
-    background-color: white;
-    color: black;
+    border-style: solid;
     cursor: pointer;
 }
 
-.btnWhite:hover{
+nav button {
     background-color: black;
     color: white;
-    cursor: pointer;
+    margin-left: 30%;
 }
 
-nav a:hover{
-    border-bottom: 5px solid #00754a;
-    color: #00754a;
+nav button:hover{
+    background-color: #222222;
+    border-color: #333333;
+}
+
+.btnTransparent{
+    margin-top: 10px;
+    border-color: #eeeeee;
+    color: #eeeeee;
+    background-color: transparent;
+    width: 150px;
+}
+
+.btnTransparent:hover{
+    background-color: #dddddd40;
 }
 
 #marca{
@@ -65,7 +68,7 @@ nav a:hover{
     height: 50px;
     background-image: url(./assets/logo.svg);
     background-size: cover;
-    margin: 0px 40px 0px 30px;
+    margin-right: 4%;
 }
 
 
@@ -78,8 +81,8 @@ main{
 }
 
 main h1 {
-    font-size: 40px;
-    padding-bottom: 25px;
+    font-size: 36px;
+    padding-bottom: 24px;
 }
 
 .banner{
@@ -97,11 +100,20 @@ main h1 {
 
 .banner div{
     align-content: center;
-    margin: 10px 50px;
+    margin: 5%;
 }
 
 .imgMid{
     width: 50%;
+}
+
+.lima{
+    background-color: #CAE390;
+    color: black;
+}
+
+.thanos{
+    background-color: #554e82;
 }
 
 #novedades img{
@@ -114,9 +126,9 @@ main h1 {
     padding-bottom: 20px;
 }
 
-.lima{
-    background-color: #CAE390;
+#novedades .lima button{
     color: black;
+    border-color: black;
 }
 
 footer{
