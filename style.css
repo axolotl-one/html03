@@ -6,30 +6,45 @@
 nav{
     display: flex;
     align-items: center;
-    justify-content:space-around;
-    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 0 3%;
     height: 110px;
-    background-color: #fefefeff;
     width: 100%;
-}
-
-.navBarOpcions{
-    display: inline-block;
+    background-color: #fefefeff;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+
+#navBarIzq{
+    display: flex;
+    overflow-wrap: anywhere;
+    align-items: center;
+    justify-content: space-around;
+    width: 370px;
+    min-width: 125px;
+}
+
+#navBarDer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 650px;
+    min-width: 275px;
 }
 
 nav a{
     text-decoration: none;
     font-size: 20px;
     color: black;
-    padding-bottom: 10px;
-    transition: color 0.3s, border-bottom 0.2s;
+    padding: 15px 0px;
+    border-bottom: 5px solid transparent;
+    transition: border-bottom 0.3s, color 0.3s;
 }
 
 nav a:hover{
     border-bottom: 5px solid #00754a;
     color: #00754a;
+    transition: border-bottom 0.2s, color 0.3s;
 }
 
 button {
@@ -42,18 +57,22 @@ button {
 }
 
 nav button {
+    font-weight: bold;
     background-color: black;
+    border: black solid 3px;
     color: white;
-    transition: background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s, border-color 0.5s;
 }
 
 nav button:hover{
-    background-color: #303030;
-    border-color: #404040;
+    background-color: transparent;
+    border-color: #00754a;
+    color: #00754a;
 }
 
 nav button:active{
-    background-color: #111111;
+    color: white;
+    background-color: #00754a;
     transition: background-color;
 }
 
@@ -76,13 +95,24 @@ nav button:active{
 }
 
 #marca{
-    width: 9vh;
-    height: 9vh;
+    width: 55px;
+    height: 55px;
     background-image: url(./assets/logo.svg);
     background-size: cover;
 }
 
+#marcadorIcon{
+    display: inline-flex; /* Flex para alinear ícono y texto */
+    background-image: url('./assets/uAIcon.png'); /* Ruta del ícono */
+    background-repeat: no-repeat; /* Evitar repetición */
+    background-size: 40px 45px; /* Tamaño del ícono */
+    padding-left: 45px; /* Espacio para el ícono */
+    transition: border-bottom 0.3s, color 0.3s, background-image 0.5s; /* Transiciones */
+}
 
+#marcadorIcon:hover{
+    background-image: url(./assets/uAIconHover.png);
+}
 
 
 
@@ -146,7 +176,7 @@ main h1 {
 #leyenda{
     position: fixed;
     bottom: 0;
-    font-size: 16px;
+    font-size: 15px;
     align-content: center;
     background-color: #1e3932;
     color: white;
@@ -157,7 +187,7 @@ main h1 {
 
 footer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
-    background:linear-gradient(to bottom, #1e3932, #228244);
+    background:linear-gradient(to bottom, #1e3932, #15724F);
     color: #dddddd;
     width: 100%;
     display: flex;
@@ -222,14 +252,14 @@ ul{
     background-image: url(./assets/ytIcon.png);
 }
 
-#footerLinks2, #footerDerechos{
+#footerLinks2, .footerDerechos{
     display: flex;
     justify-content: center;
     margin-bottom: 1%;
     gap: 1%;
 }
 
-footer h6{
+footer h6, footer h6 a{
     color: #6fb086;
     font-size: 12px;
 }
