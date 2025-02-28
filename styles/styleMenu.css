@@ -97,13 +97,13 @@ nav button:active{
 #marca{
     width: 55px;
     height: 55px;
-    background-image: url(./assets/logo.svg);
+    background-image: url(../assets/logo.svg);
     background-size: cover;
 }
 
 #marcadorIcon{
     display: inline-flex; /* Flex para alinear ícono y texto */
-    background-image: url('./assets/uAIcon.png'); /* Ruta del ícono */
+    background-image: url(../assets/uAIcon.png); /* Ruta del ícono */
     background-repeat: no-repeat; /* Evitar repetición */
     background-size: 40px 45px; /* Tamaño del ícono */
     padding-left: 45px; /* Espacio para el ícono */
@@ -111,7 +111,7 @@ nav button:active{
 }
 
 #marcadorIcon:hover{
-    background-image: url(./assets/uAIconHover.png);
+    background-image: url(../assets/uAIconHover.png);
 }
 
 
@@ -188,6 +188,7 @@ main h1 {
 footer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
     background:linear-gradient(to bottom, #1e3932, #15724F);
+    box-shadow: 0px -2px 12px 3px #000000aa;
     color: #dddddd;
     width: 100%;
     display: flex;
@@ -237,19 +238,19 @@ ul{
 }
 
 #fbIcon{
-    background-image: url(./assets/fbIcon.png);
+    background-image: url(../assets/media/fbIcon.png);
 }
 
 #igIcon{
-    background-image: url(./assets/igIcon.png);
+    background-image: url(../assets/media/igIcon.png);
 }
 
 #twIcon{
-    background-image: url(./assets/twIcon.png);
+    background-image: url(../assets/media/twIcon.png);
 }
 
 #ytIcon{
-    background-image: url(./assets/ytIcon.png);
+    background-image: url(../assets/media/ytIcon.png);
 }
 
 #footerLinks2, .footerDerechos{

@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#barraInferior{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    font-size: 10px;
+    align-content: center;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 0px -5px 8px #00000030;
+    padding: 4px 0px;
+    height: 100px;
+    width: 100%;
+}
+
+#barraSuperior{
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 5px 8px #00000030;
+    width: 100%;
+    height: 80px;
+    gap: 4%;
+}
+
+#barraInferior a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 12vw 12vw;
+    padding-top: 13vw;
+    width: 12vw;
+}
+
+#botonInicio{
+    background-image: url(../assets/mobile/navHome.png);
+}
+
+#botonMenu{
+    background-image: url(../assets/mobile/navMenu.png);
+}
+
+#botonRewards{
+    background-image: url(../assets/mobile/navRewardsHover.png);
+}
+
+#botonLocalizar{
+    background-image: url(../assets/mobile/navSucursal.png);
+}
+
+#botonPerfil{
+    background-image: url(../assets/mobile/navUser.png);
+}
+
+#barraDesktop{
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+
+#logoMenu{
+    background-image: url(../assets/logo.svg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 4%;
+}
+
+#portada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 90vh;
+    background:linear-gradient(to top, #1e3932, #15724F);
+    z-index: 0;
+}
+
+#portada button{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    border: white solid 2px;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+#logoRewards{
+    width: 100%;
+    height: 25vh;
+    background-image: url(../assets/rewards/logomain.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#appPortada{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../assets/rewards/appPortada.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-self: right;
+}
+
+#contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.estrellaText{
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/rewards/estrella.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+footer{
+    height: 26vh;
+}
+
+.gridPosts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
