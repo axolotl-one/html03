@@ -14,13 +14,14 @@
     background-color: white;
     box-shadow: 0px -5px 8px #00000030;
     padding: 4px 0px;
-    height: 100px;
+    height: 19vw;
     width: 100%;
 }
 
 #barraSuperior{
     display: flex;
     position: fixed;
+    top: 0;
     z-index: 100;
     align-items: center;
     background-color: white;
@@ -40,6 +41,10 @@
     background-size: 12vw 12vw;
     padding-top: 13vw;
     width: 12vw;
+}
+
+.botonMobile{
+    background-size: 10vw 9vw;
 }
 
 #botonInicio{
@@ -63,7 +68,7 @@
 }
 
 #barraDesktop{
-    display: flex;
+    display: none;
     width: 100%;
     height: 80px;
 }
@@ -76,22 +81,22 @@
     margin-left: 4%;
 }
 
-#portada{
+#portadaContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background:linear-gradient(to top, #1e3932, #15724F);
     z-index: 0;
 }
 
-#portada button{
+#portadaContainer button{
     background-color: transparent;
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 20vw;
     border: white solid 2px;
     margin: 5px;
     color: white;
@@ -99,20 +104,22 @@
 }
 
 #logoRewards{
-    width: 100%;
-    height: 25vh;
+    width: 75vw;
+    height: 26vw;
     background-image: url(../assets/rewards/logomain.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#appPortada{
-    width: 100%;
-    height: 50vh;
+#portadaFooter{
+    width: 50vw;
+    height: 30vh;
     background-image: url(../assets/rewards/appPortada.png);
     background-size: cover;
     background-repeat: no-repeat;
-    justify-self: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 #contenido{
@@ -137,4 +144,158 @@ footer{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.gridPosts img{
+    width: 50vw;
+    height: 50vw;
+}
+
+@media screen and (min-width: 690px){
+
+    #barraInferior, #barraSuperior{
+        display: none;
+    }
+
+    #barraDesktop{
+        z-index: 1000;
+        display: flex;
+        position: fixed;
+        top: 0;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3%;
+        height: 110px;
+        width: 100%;
+        background-color: #fefefeff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    #navBarIzq{
+        display: flex;
+        overflow-wrap: anywhere;
+        align-items: center;
+        justify-content: space-around;
+        width: 370px;
+        min-width: 125px;
+    }
+    
+    #navBarDer{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 650px;
+        min-width: 275px;
+    }
+
+    nav a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        padding: 15px 0px;
+        border-bottom: 5px solid transparent;
+        transition: border-bottom 0.3s, color 0.3s;
+    }
+    
+    nav a:hover{
+        border-bottom: 5px solid #00754a;
+        color: #00754a;
+        transition: border-bottom 0.2s, color 0.3s;
+    }
+    
+    button {
+        font-size: 20px;
+        width: 120px;
+        height: 50px;
+        border-radius: 25px;
+        border-style: solid;
+        cursor: pointer;
+        /*border-color: #eeeeee;   <* .btnTransparent>->
+        color: #eeeeee;
+        background-color: transparent;
+        width: 150px;
+        transition: background-color 0.5s;
+        flex-wrap: nowrap;*/
+    }
+
+    main button{
+        
+    }
+    
+    main button:hover{  /* .btnTransparent */
+        background-color: #cccccc35;
+    }
+    
+    main button:active{  /* .btnTransparent */
+        background-color: #88888830;
+        transition: background-color;
+    }
+    
+    nav button {
+        font-weight: bold;
+        background-color: black;
+        border: black solid 3px;
+        color: white;
+        transition: color 0.5s, background-color 0.5s, border-color 0.5s;
+    }
+    
+    nav button:hover{
+        background-color: transparent;
+        border-color: #00754a;
+        color: #00754a;
+    }
+    
+    nav button:active{
+        color: white;
+        background-color: #00754a;
+        transition: background-color;
+    }
+    
+    #marca{
+        width: 55px;
+        height: 55px;
+        background-image: url(../assets/logo.svg);
+        background-size: cover;
+    }
+    
+    #marcadorIcon{
+        display: inline-flex; /* Flex para alinear ícono y texto */
+        background-image: url(../assets/uAIcon.png); /* Ruta del ícono */
+        background-repeat: no-repeat; /* Evitar repetición */
+        background-size: 40px 45px; /* Tamaño del ícono */
+        padding-left: 45px; /* Espacio para el ícono */
+        transition: border-bottom 0.3s, color 0.3s, background-image 0.5s; /* Transiciones */
+    }
+    
+    #marcadorIcon:hover{
+        background-image: url(../assets/uAIconHover.png);
+    }
+    
+    main{
+        display: flex;
+    }
+
+    main #portadaContainer, #contenido{
+        width: 50vw;
+    }
+
+    #portadaContainer{
+        position: sticky;
+        top: 0;
+    }
+
+    #logoRewards{
+        width: 31vw;
+        height: 11vw;
+    }
+
+    #portadaFooter{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #contenido{
+
+    }
 }
